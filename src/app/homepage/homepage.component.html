@@ -1,0 +1,640 @@
+<nav class="bg-white py-3">
+    <div class="row">
+        <div class="col-md-2">
+            <a href=""><img src="https://data.creden.co/assets/images/creden_logos.png" alt="" class="border border-white" style="width: 160px;"></a>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <select class="form-select" style="max-width: 150px;">
+                    <option value="1">ขึ้นต้นด้วย</option>
+                    <option value="2">คีย์เวิร์ด</option>
+                </select>
+                <input class="form-control" type="search" placeholder="กรอกชื่อบริษัทหรือหมายเลขทะเบียนนิติบุคคล"
+                    aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit"><i
+                        class="fa-solid fa-magnifying-glass text-primary"></i></button>
+            </div>
+        </div>
+        <div class="col-auto mt-2">
+            <a href="#">บริการและการขาย</a>
+        </div>
+        <div class="col-auto mt-2">
+            <a href="#">แพ็คเกจ</a>
+        </div>
+        <div class="col-auto">
+            <div class="dropdown">
+                <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-circle-question fa-1x"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item dropdown-item-button" href="#">ข้อมูลผู้ติดต่อ</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="input-group">
+                <select class="form-select" id="languageSelect" style="max-width: 150px;">
+                    <option value="1">ไทย</option>
+                    <option value="2">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-outline-primary me-3">สมัครสมาชิก</button>
+            <button type="button" class="btn btn-primary">เข้าสู่ระบบ</button>
+        </div>
+    </div>
+</nav>
+
+    <nav class="navbar bg-primary navbar-dark sticky-lg-top">
+        <div class="container">
+            <div class="col-12">
+                <h1 class="text-white">บริษัท เทคไอทีโซลูชั่น จำกัด</h1>
+            </div>
+            <div class="col-11">
+                <h3>TAKE IT SOLUTION CO.,LTD.</h3>
+            </div>
+            <div class="col-1 text-white text-end">
+                <i class="fa-regular fa-eye"></i>
+                1425
+            </div>
+        </div>
+    </nav>
+
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">ข้อมูลทั่วไป</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn text-white bg-dark">ข้อมูลกรรมการและผู้ถือหุ้น <i
+                                class="fa-solid fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">กรรมการ</a>
+                            <a href="#">การถือหุ้น</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn text-white bg-dark">ข้อมูลการเงิน <i
+                                class="fa-solid fa-chevron-down "></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">กรรมการ</a>
+                            <a href="#">การถือหุ้น</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">ข้อมูลประวัติการเปลี่ยนแปลง</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">ข่าว</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">จัดอันดับ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-4 box_graph_1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-body text-center bg-primary text-white">
+                        <h5>รายได้รวมปี 2565 (บาท)</h5>
+                    </div>
+                    <div class="text-center text-primary mt-2">
+                        <h4>71,424,840</h4>
+                    </div>
+                    <div class="text-center text-primary mt-2" style="color: rgb(157, 157, 157);">
+                        <h4 class="text-danger"><i class="fa-solid fa-arrow-down"></i> YoY -16.02 %</h4>
+                    </div>
+                    <div class="">
+                        <p-chart type="line" [data]="data1" [options]="options" />
+                    </div>
+                    <div class="text-end fw-sm-1">
+                        <a href="">คลิกเพื่อดูงบการเงินฉบับเต็ม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 box_graph_2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-body text-center bg-primary text-white">
+                        <h5>รายได้รวมปี 2565 (บาท)</h5>
+                    </div>
+                    <div class="text-center text-primary mt-2">
+                        <h4>1,802,689</h4>
+                    </div>
+                    <div class="text-center text-primary mt-2" style="color: rgb(157, 157, 157);">
+                        <h4 class="text-danger"><i class="fa-solid fa-arrow-down"></i> YoY -60.40 %</h4>
+                    </div>
+                    <div class="">
+                        <p-chart type="line" [data]="data2" [options]="options" />
+                    </div>
+                    <div class="text-end fw-sm-1">
+                        <a href="">คลิกเพื่อดูงบการเงินฉบับเต็ม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 box_graph_3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-body text-center bg-primary text-white">
+                        <h5>สินทรัพย์รวม ปี 2565 (บาท)</h5>
+                    </div>
+                    <div class="text-center text-primary mt-2">
+                        <h4>47,457,154</h4>
+                    </div>
+                    <div class="text-center text-primary mt-2" style="color: rgb(157, 157, 157);">
+                        <h4 class="text-primary"><i class="fa-solid fa-arrow-up"></i> YoY 56.91 %</h4>
+                    </div>
+                    <div class="">
+                        <p-chart type="line" [data]="data3" [options]="options" />
+                    </div>
+                    <div class="text-end fw-sm-1">
+                        <a href="">คลิกเพื่อดูงบการเงินฉบับเต็ม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="">
+                        <h5 class="text-primary fw-bold">ข้อมูลทั่วไปของ บริษัท เท็คไอทีโซลูชั่น จำกัด</h5>
+                    </div>
+                    <div class="table-responsive mt-2">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">ชื่อนิติบุคคล</th>
+                                    <td>TAKE IT SOLUTION CO.,LTD.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">เลขทะเบียนนิติบุคคล</th>
+                                    <td>0105551051021</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">วันเดือนปีที่จดทะเบียน</th>
+                                    <td>วันที่ 13 พ.ค. 2551 (16 ปี 1 เดือน 6 วัน)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">สถานภาพกิจการ</th>
+                                    <td>ยังดำเนินกิจการอยู่</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ประเภทธุรกิจ</th>
+                                    <td>บริษัทจำกัด</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ปีที่ส่งงบการเงิน</th>
+                                    <td><a href="#">2561 , 2562 , 2563 , 2564 , 2565</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">รอบปิดบัญชีปีล่าสุด </th>
+                                    <td><a href="#">31 ธันวาคม (วันที่ส่งงบ 29 พ.ค. 2566) - <span
+                                                style="color: green">(ส่งงบก่อน 2 วัน) </span> <i
+                                                class="fa-solid fa-circle-question fa-1x text-dark "></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ผู้สอบบัญชีปีล่าสุด</th>
+                                    <td><a href="#">xxxxxxx xxxxxxx - (ตรวจ 867 บริษัท)</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">จัดซื้อจัดจ้างภาครัฐ</th>
+                                    <td><a href="#">x,xxx โครงการ มูลค่า xx,xxx,xxx บาท</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">จดทะเบียนภาษีมูลค่าเพิ่ม</th>
+                                    <td><a href="#">xx สาขา</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="box_bgtable" style="height: 30%; margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="col-2 col-md-2 pl-3" style="margin: auto;">
+                                <div class="img_grade_fs_score">
+                                    <span
+                                        style="padding: 25px; font-size: 35px; font-weight: 600; color: rgb(224, 224, 224);">xx</span>
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-10" style="font-size: 14px;">
+                                <h3 style="padding: 0px;">คะแนนทางการเงิน</h3>
+                                <div>
+                                    มีความแข็งแกร่งทางการเงินในระดับ
+                                    <span style="font-weight: 600; color: rgb(224, 224, 224);">xx</span>
+                                    โดยมีคะแนนอยู่ที่ xx/500
+                                </div>
+                                <div class="pt-4"></div>
+                                <img src="https://data.creden.co/assets/images/fs_total_score_graph.png"
+                                    style="margin: auto; width: 95%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="">
+                            <h5 class="text-primary fw-bold">ข้อมูลธุรกิจของ บริษัท เท็คไอทีโซลูชั่น จำกัด</h5>
+                        </div>
+                        <div class="table-responsive mt-2">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">ทุนจดทะเบียนปัจจุบัน (บาท)</th>
+                                        <td>5,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">มูลค่าบริษัท</th>
+                                        <td>23,824,994 บาท (476.5% ของทุน)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">จำนวนหุ้น (ราคาต่อหุ้น)</th>
+                                        <td>50,000 หุ้น (ราคา 476 บาท/หุ้น)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ขนาดธุรกิจ</th>
+                                        <td>Medium</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">หมวดธุรกิจ (A-U)</th>
+                                        <td>J : ข้อมูลข่าวสารและการสื่อสาร</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">กลุ่มธุรกิจ (TSIC)</th>
+                                        <td>62023 : กิจกรรมการจัดการสิ่งอำนวยความสะดวกด้านคอมพิวเตอร์</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">อันดับธุรกิจในกลุ่มนี้</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">วัตถุประสงค์</th>
+                                        <td>ให้บริการปรึกษา ติดตั้ง ฝึกอบรมระบบคอมพิวเตอร์</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <div class="box_credit_term pc mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-bold">เครดิตทางการค้า บริษัท เท็คไอทีโซลูชั่น จำกัด</h5>
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-6 col-lg-6 ">
+                                <div
+                                    class="card-header text-center text-dark bg-primary fw-bold border border-secondary">
+                                    เครดิตเทอมที่เหมาะสม (วัน)
+                                </div>
+                                <div class="card-body text-center border border-secondary">
+                                    XX
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 ">
+                                <div
+                                    class="card-header text-center text-dark bg-dark-emphasis fw-bold border border-secondary">
+                                    วงเงินเครดิตที่เหมาะสม (บาท)
+                                </div>
+                                <div class="card-body text-center border border-secondary">
+                                    XXX
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-primary fw-bold">วงจรเงินสดทางการเงิน (TBS CCC Index)</h5>
+                    <div class="row justify-content-center pt-5">
+                        <div class="col-12">
+                            <div id="arrow-value-pc">
+                                <div class="d-flex justify-content-center"><span class="fa-stack"
+                                        style="position: absolute; margin-top: -25px; margin-right: -16.6667%;"><i
+                                            class="fa fa-caret-down" style="font-size: 50px;"></i> <span
+                                            class="text-dark"><span class="font-weight-bold text-center"
+                                                style="font-size: 18px; margin-top: -70px; display: block;">
+                                                -30
+                                            </span></span></span></div>
+                            </div>
+                            <div id="progress-bar-ccc">
+                                <div class="container">
+                                    <div class="progress" style="padding-right: 0px; height: 60px;">
+                                        <div role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                            class="progress-bar"
+                                            style="width: 100%; text-align: left; background-image: linear-gradient(to left, green, yellow, red);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="values-progress-bar-ccc">
+                                <div id="number_detail" class="d-flex justify-content-between"><span
+                                        class="font-weight-bold">180</span> <span class="font-weight-bold">0</span>
+                                    <span class="font-weight-bold">-180</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="detail_ccc_progressbar"><span class="text-primary">บริษัท เท็คไอทีโซลูชั่น จำกัด</span>
+                        มีวงจรเงินสด เท่ากับ <span class="text-primary">-30</span> วัน <br>
+                        หมายความว่า
+                        <span>บริษัท เท็คไอทีโซลูชั่น จำกัด</span>
+                        ได้รับเงินจากลูกค้า <span class="text-primary">"ก่อน"</span> วันกำหนดชำระหนี้ <span
+                            class="text-primary">30</span> วัน <br>
+                        ถือว่า
+                        <span class="text-primary">"ดีกว่า"</span>
+                        ค่าเฉลี่ยทั้งประเทศที่ 41.74 วัน
+                    </p>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary">คลิกเพื่อดูเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <div class="box_credit_term pc mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="text-primary fw-bold">อันดับธุรกิจ บริษัท เท็คไอทีโซลูชั่น จำกัด</h5>
+                            </div>
+                            <div class="col-3">
+                                <select class="form-select bg-primary text-white  text-center">
+                                    <option value="1">ปี 2565</option>
+                                    <option value="2">ปี 2564</option>
+                                    <option value="3">ปี 2563</option>
+                                    <option value="4">ปี 2562</option>
+                                    <option value="5">ปี 2561</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table-responsive overflow-x-scroll text-center">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-primary" scope="col">ประเภท</th>
+                                        <th class="bg-primary" scope="col">รายได้รวม</th>
+                                        <th class="bg-primary" scope="col">กำไร (ขาดทุน)</th>
+                                        <th class="bg-primary" scope="col">ภาษีเงินได้</th>
+                                        <th class="bg-primary" scope="col">สินทรัพย์รวม
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="fs-6">
+                                        <th scope="row" style="background-color: rgb(221, 221, 221);">ประเทศไทย </th>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 48,910</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 57,192</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 38,642</td>
+                                        <td><i class="fa-solid fa-arrow-up text-success"></i> 67,649</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" style="background-color: rgb(221, 221, 221);">
+                                            กรุงเทพมหานครและปริมณฑล </th>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 720</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 1,682</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 1,001</td>
+                                        <td><i class="fa-solid fa-arrow-up text-success"></i> 1,042</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" style="background-color: rgb(221, 221, 221);">กรุงเทพมหานคร</th>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 19,789</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 26,649</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 18,477</td>
+                                        <td><i class="fa-solid fa-arrow-up text-success"></i> 32,408</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" style="background-color: rgb(221, 221, 221);">หมวดธุรกิจ : J <i
+                                                class="fa-solid fa-circle-question fa-1x text-dark "></i></th>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 30,336</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 38,946</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 27,063</td>
+                                        <td><i class="fa-solid fa-arrow-up text-success"></i> 45,985</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" style="background-color: rgb(221, 221, 221);">มอก. : 62023 <i
+                                                class="fa-solid fa-circle-question fa-1x text-dark "></i></th>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 42</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 89</td>
+                                        <td><i class="fa-solid fa-arrow-down text-danger"></i> 57</td>
+                                        <td><i class="fa-solid fa-arrow-up text-success"></i> 53</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-end mt-3">
+                            <button type="button"
+                                class="btn btn-outline-primary">คลิกเพื่อดูการจัดอันดับทั้งหมด</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="business-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-bold">บริษัทในกลุ่มธุรกิจเดียวกัน</h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">แอ็ดวานซ์ เทค โซลูชั่นส์ จำกัด
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">เอสวีเจ เทคนิคอล ซิสเต็ม จำกัด
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">ไซเบอร์ อีลีท จำกัด
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">วัน อิเล็กทรอนิกส์ บิลลิ่ง จำกัด (มหาชน)
+                                        </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-primary fw-bold">กรรมการและผู้มีอำนาจลงนาม TAKE IT SOLUTION CO.,LTD.</h5>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card-header text-center text-white bg-primary fw-bold">
+                                <h6>กรรมการ (2 คน)</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span>นางสาวตรีนุช จันทมาลา</span>
+                                <li>
+                                    <span>นางสาวรัชวิชา รอบจังหวัด</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-header text-center text-white bg-primary fw-bold">
+                                <h6>ผู้มีอำนาจลงนาม</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span>กรรมการหนึ่งคนลงลายมือชื่อ และประทับตราสำคัญของบริษัท</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-end mt-5">
+                        <button type="button" class="btn btn-outline-primary">คลิกเพื่อดูกรรมการแบบเต็ม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-primary fw-bold">สัดส่วนผู้ถือหุ้น TAKE IT SOLUTION CO.,LTD.</h5>
+                    <div class="card flex justify-content-center">
+                        <p-chart type="doughnut" [data]="data_proportion" [options]="options" />
+                    </div>
+                    <div class="text-end mt-4">
+                        <button type="button" class="btn btn-outline-primary">คลิกเพื่อดูกรรมการแบบเต็ม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-bold">รายการการเปลี่ยนแปลง</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>วันที่</th>
+                                        <th>รายการที่เปลี่ยนแปลง</th>
+                                        <th>รายละเอียด</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9 ก.ย. 2557</td>
+                                        <td>ทุนจดทะเบียน (บาท)</td>
+                                        <td>5,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13 พ.ค. 2551</td>
+                                        <td>ชื่อนิติบุคคล</td>
+                                        <td>เท็คไอทีโซลูชั่น จำกัด</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13 พ.ค. 2551</td>
+                                        <td>ทุนจดทะเบียน (บาท)</td>
+                                        <td>1,000,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-end mt-4">
+                            <button type="button"
+                                class="btn btn-outline-primary">คลิกเพื่อดูประวัติการเปลี่ยนแปลงทั้งหมด</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-bold">
+                            ที่อยู่ บริษัท เท็คไอทีโซลูชั่น จำกัด (ที่อยู่ร่วมกันจำนวน 2 บริษัท)
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <p>135/2 อาคารอมรพันธุ์ 205 ทาวเวอร์ 2 ชั้นที่ 1 ซอยนาทอง ถนนรัชดาภิเษก แขวงดินแดง เขตดินแดง
+                            กรุงเทพมหานคร</p>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0986260768345!2d100.57009112461614!3d13.772925546804977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e87369c10e5%3A0xef944e753af201a4!2z4Lit4Liy4LiE4Liy4Lij4Lit4Lih4Lij4Lie4Lix4LiZ4LiY4Li44LmMIDIwNSDguJfguLLguKfguYDguKfguK3guKPguYwgMg!5e0!3m2!1sth!2sth!4v1718528704645!5m2!1sth!2sth" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="note mt-2">
+                    <p>หมายเหตุ</p>
+                    <ul>
+                        <li>
+                            - ข้อมูลอัพเดทเมื่อ 16 มิถุนายน 2567 
+                             <button type="button" class="btn btn-primary">คลิกเพื่ออัพเดท</button>
+                        </li>
+                        <li>- แหล่งที่มาข้อมูลจากศูนย์กลางข้อมูลภาครัฐ data.go.th และแหล่งข้อมูลอื่นๆ</li>
+                        <li>- ข้อมูลนี้มีไว้สำหรับใช้วิเคราะห์เชิงธุรกิจเท่านั้น ไม่สามารถนำไปอ้างอิงเป็นหลักฐานทางกฏหมายได้
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted"><p><a href="#" class="link-underline-light">© สงวนสิทธิ์ 2564 ครีเดน เอเชีย จำกัด Ver. 2.0</a></p></span>
+            </div>
+            <div class="text-end">
+                <button class="btn">Privacy</button>
+            </div>
+        </footer>
+    </div>
+</div>
